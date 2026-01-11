@@ -37,7 +37,7 @@ const traitPhrases = {
     low: "prefer clear logic"
   },
   hands_on: {
-    high: "enjoy conceptual work",
+    high: "to enjoy conceptual work",
     low: "like tangible, hands-on tasks"
   },
   risk_appetite: {
@@ -53,7 +53,7 @@ const traitPhrases = {
     low: "care less about aesthetics"
   },
   impact_orientation: {
-    high: "enjoy systems and frameworks",
+    high: "to enjoy systems and frameworks",
     low: "care about people impact"
   },
   time_horizon: {
