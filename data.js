@@ -78,7 +78,7 @@ const AppData = {
       options: [
         {
           id: "rainy_sunday_a",
-          text: "Deep-dive a topic online or in a book.",
+          text: "Do a deep dive into a topic online or in a book.",
           weights: {
             social_energy: -2,
             cognitive_style: -2,
@@ -277,7 +277,7 @@ const AppData = {
         },
         {
           id: "deadline_style_c",
-          text: "Think off and on, do most work in the last week.",
+          text: "Think off and on, then do most of the work in the last week.",
           weights: {
             time_horizon: -1,
             risk_appetite: 1,
@@ -658,7 +658,7 @@ const AppData = {
         },
         {
           id: "attention_detail_d",
-          text: "I obsess over them in certain areas, ignore them in others.",
+          text: "I obsess over them in certain areas and ignore them in others.",
           weights: {
             cognitive_style: 1,
             autonomy_need: 1,
