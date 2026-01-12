@@ -1,6 +1,6 @@
 # whattodo (Sideways Compass)
 
-Lightweight, client-side questionnaire that maps playful questions to trait dimensions and returns three occupations and three hobbies with explanations.
+Lightweight, client-side questionnaire that maps seven playful questions to trait dimensions and returns three occupations and three hobbies with explanations.
 
 ## Run locally
 
@@ -21,5 +21,5 @@ Option 2 (recommended for consistent loading):
 ## Notes
 
 - All logic runs in the browser; no backend required.
-- Catalogs include 60 occupations and 60 hobbies with trait vectors and cluster tags.
+- Catalogs include 120 occupations and 120 hobbies with trait vectors and cluster tags.
 - For PR status and review flow expectations, see `skills/agent-process-contract.md`.
