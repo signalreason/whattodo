@@ -74,11 +74,11 @@ const AppData = {
   questions: [
     {
       id: "rainy_sunday",
-      text: "It is a rainy Sunday with no obligations. Which feels closest to what you would do first?",
+      text: "A mysterious box labeled \"Free afternoon\" shows up at your door. What do you do first?",
       options: [
         {
           id: "rainy_sunday_a",
-          text: "Do a deep dive into a topic online or in a book.",
+          text: "Open a book or browser rabbit hole and disappear into it.",
           weights: {
             social_energy: -2,
             cognitive_style: -2,
@@ -89,7 +89,7 @@ const AppData = {
         },
         {
           id: "rainy_sunday_b",
-          text: "Rearrange or fix something at home.",
+          text: "Fix or reorganize something that has been bugging you.",
           weights: {
             hands_on: -2,
             structure_preference: -1,
@@ -99,7 +99,7 @@ const AppData = {
         },
         {
           id: "rainy_sunday_c",
-          text: "Call a friend and make loose plans.",
+          text: "Text someone and see who is up for something.",
           weights: {
             social_energy: 2,
             impact_orientation: -2,
@@ -109,7 +109,7 @@ const AppData = {
         },
         {
           id: "rainy_sunday_d",
-          text: "Start a creative project (writing, drawing, music).",
+          text: "Start making something (sketching, writing, or music).",
           weights: {
             aesthetic_sensitivity: 2,
             cognitive_style: 2,
@@ -122,7 +122,7 @@ const AppData = {
     },
     {
       id: "new_gadget",
-      text: "You get a complicated new gadget with a 200-page manual. What happens?",
+      text: "A complicated gadget appears with a 200-page manual. What happens?",
       options: [
         {
           id: "new_gadget_a",
@@ -156,7 +156,7 @@ const AppData = {
         },
         {
           id: "new_gadget_d",
-          text: "Watch a few video reviews and tutorials.",
+          text: "Watch a few video walkthroughs first.",
           weights: {
             cognitive_style: 1,
             autonomy_need: -1,
@@ -166,139 +166,8 @@ const AppData = {
       ]
     },
     {
-      id: "party_room",
-      text: "At a lively party where you do not know many people, you are most likely to...",
-      options: [
-        {
-          id: "party_room_a",
-          text: "Find one interesting person and talk for a while.",
-          weights: {
-            social_energy: 1,
-            impact_orientation: -1,
-            cognitive_style: 1,
-            time_horizon: 1
-          }
-        },
-        {
-          id: "party_room_b",
-          text: "Move around and chat with lots of people briefly.",
-          weights: {
-            social_energy: 2,
-            novelty_preference: 1,
-            risk_appetite: 1
-          }
-        },
-        {
-          id: "party_room_c",
-          text: "Help in the kitchen or with logistics.",
-          weights: {
-            hands_on: -1,
-            structure_preference: -1,
-            impact_orientation: -1,
-            autonomy_need: -1
-          }
-        },
-        {
-          id: "party_room_d",
-          text: "Hang back and observe until something draws you in.",
-          weights: {
-            social_energy: -2,
-            cognitive_style: -1,
-            autonomy_need: 1
-          }
-        }
-      ]
-    },
-    {
-      id: "notebook_pattern",
-      text: "Look at your current notes. They are mostly...",
-      options: [
-        {
-          id: "notebook_pattern_a",
-          text: "Lists, bullet points, and checkboxes.",
-          weights: {
-            structure_preference: -2,
-            cognitive_style: -1,
-            time_horizon: 1
-          }
-        },
-        {
-          id: "notebook_pattern_b",
-          text: "Diagrams, arrows, and sketches.",
-          weights: {
-            cognitive_style: 1,
-            aesthetic_sensitivity: 1,
-            hands_on: 1,
-            structure_preference: 1
-          }
-        },
-        {
-          id: "notebook_pattern_c",
-          text: "Paragraphs and reflections.",
-          weights: {
-            cognitive_style: 1,
-            time_horizon: 1,
-            autonomy_need: 1
-          }
-        },
-        {
-          id: "notebook_pattern_d",
-          text: "Almost none; I keep things in my head.",
-          weights: {
-            structure_preference: 2,
-            novelty_preference: 1,
-            risk_appetite: 1
-          }
-        }
-      ]
-    },
-    {
-      id: "deadline_style",
-      text: "You are assigned a project due in three weeks. What best matches your style?",
-      options: [
-        {
-          id: "deadline_style_a",
-          text: "Plan out each week and follow the plan.",
-          weights: {
-            structure_preference: -2,
-            time_horizon: 2,
-            risk_appetite: -1
-          }
-        },
-        {
-          id: "deadline_style_b",
-          text: "Start exploring immediately and refine as you go.",
-          weights: {
-            novelty_preference: 1,
-            autonomy_need: 1,
-            structure_preference: 1,
-            time_horizon: 1
-          }
-        },
-        {
-          id: "deadline_style_c",
-          text: "Think off and on, then do most of the work in the last week.",
-          weights: {
-            time_horizon: -1,
-            risk_appetite: 1,
-            structure_preference: 1
-          }
-        },
-        {
-          id: "deadline_style_d",
-          text: "Wait for a spark, then work in big bursts.",
-          weights: {
-            autonomy_need: 2,
-            novelty_preference: 1,
-            risk_appetite: 1,
-            cognitive_style: 1
-          }
-        }
-      ]
-    },
-    {
       id: "city_walk",
-      text: "Walking through a new city with an afternoon free, where do you drift?",
+      text: "A teleport drops you into an unfamiliar city with four free hours. Where do you drift?",
       options: [
         {
           id: "city_walk_a",
@@ -340,47 +209,8 @@ const AppData = {
       ]
     },
     {
-      id: "frustration_trigger",
-      text: "Which situation frustrates you the most?",
-      options: [
-        {
-          id: "frustration_trigger_a",
-          text: "Chaotic meetings with no clear decisions.",
-          weights: {
-            structure_preference: -2,
-            autonomy_need: 1
-          }
-        },
-        {
-          id: "frustration_trigger_b",
-          text: "Being told exactly how to do something step-by-step.",
-          weights: {
-            autonomy_need: 2,
-            structure_preference: 1,
-            risk_appetite: 1
-          }
-        },
-        {
-          id: "frustration_trigger_c",
-          text: "Doing the same task the same way every day.",
-          weights: {
-            novelty_preference: 2,
-            structure_preference: 1
-          }
-        },
-        {
-          id: "frustration_trigger_d",
-          text: "Not seeing how your work affects anything or anyone.",
-          weights: {
-            impact_orientation: -1,
-            time_horizon: 1
-          }
-        }
-      ]
-    },
-    {
       id: "music_habit",
-      text: "Think about how you listen to music while working.",
+      text: "Your brain needs a soundtrack to focus. What do you play?",
       options: [
         {
           id: "music_habit_a",
@@ -420,7 +250,7 @@ const AppData = {
     },
     {
       id: "small_windfall",
-      text: "You unexpectedly receive $500 to spend on yourself. What feels most natural?",
+      text: "An eccentric aunt hands you a $500 gift card that expires tomorrow. What feels most natural?",
       options: [
         {
           id: "small_windfall_a",
@@ -433,77 +263,33 @@ const AppData = {
         },
         {
           id: "small_windfall_b",
-          text: "A short trip, experience, or event.",
+          text: "An experience you can share with others.",
           weights: {
-            novelty_preference: 2,
-            risk_appetite: 1,
-            social_energy: 1
+            social_energy: 2,
+            impact_orientation: -1
           }
         },
         {
           id: "small_windfall_c",
-          text: "Courses or books to learn something new.",
+          text: "Something practical you have been meaning to upgrade.",
           weights: {
-            cognitive_style: -1,
-            time_horizon: 2
-          }
-        },
-        {
-          id: "small_windfall_d",
-          text: "Save or invest it toward a bigger plan.",
-          weights: {
-            risk_appetite: -2,
-            time_horizon: 2,
-            structure_preference: -1
-          }
-        }
-      ]
-    },
-    {
-      id: "problem_type",
-      text: "You are at your best when solving...",
-      options: [
-        {
-          id: "problem_type_a",
-          text: "Puzzles with clear right or wrong answers.",
-          weights: {
-            cognitive_style: -2,
             structure_preference: -1,
             time_horizon: 1
           }
         },
         {
-          id: "problem_type_b",
-          text: "Messy, human problems with no obvious answer.",
+          id: "small_windfall_d",
+          text: "Something spontaneous and indulgent.",
           weights: {
-            social_energy: 1,
-            impact_orientation: -2,
-            cognitive_style: 1
-          }
-        },
-        {
-          id: "problem_type_c",
-          text: "Design or creative problems (how something should feel).",
-          weights: {
-            aesthetic_sensitivity: 2,
-            cognitive_style: 2,
-            structure_preference: 1
-          }
-        },
-        {
-          id: "problem_type_d",
-          text: "Physical or technical problems (why something is not working).",
-          weights: {
-            hands_on: -2,
-            cognitive_style: -1,
-            impact_orientation: 1
+            risk_appetite: 2,
+            novelty_preference: 2
           }
         }
       ]
     },
     {
       id: "time_distortion",
-      text: "You tend to lose track of time when...",
+      text: "You look up and realize three hours vanished when you were...",
       options: [
         {
           id: "time_distortion_a",
@@ -525,7 +311,7 @@ const AppData = {
         },
         {
           id: "time_distortion_c",
-          text: "Being in intense conversation or collaboration.",
+          text: "In intense conversation or collaboration.",
           weights: {
             social_energy: 2,
             impact_orientation: -1,
@@ -545,11 +331,11 @@ const AppData = {
     },
     {
       id: "rule_bending",
-      text: "Faced with a rule that seems inefficient or pointless, you usually...",
+      text: "A sign says \"Do Not Touch\" on something you need to fix. What do you do?",
       options: [
         {
           id: "rule_bending_a",
-          text: "Follow it exactly; there is probably a reason.",
+          text: "Follow the rule; there is probably a reason.",
           weights: {
             structure_preference: -2,
             risk_appetite: -2,
@@ -576,175 +362,12 @@ const AppData = {
         },
         {
           id: "rule_bending_d",
-          text: "Fight to get it changed for everyone.",
+          text: "Push to change the rule for everyone.",
           weights: {
             social_energy: 1,
             impact_orientation: -1,
             risk_appetite: 1,
             autonomy_need: 1
-          }
-        }
-      ]
-    },
-    {
-      id: "travel_style",
-      text: "On a trip, how do you prefer your days to go?",
-      options: [
-        {
-          id: "travel_style_a",
-          text: "Pre-planned schedule with key stops.",
-          weights: {
-            structure_preference: -2,
-            time_horizon: 1,
-            risk_appetite: -1
-          }
-        },
-        {
-          id: "travel_style_b",
-          text: "A loose idea of the day with room to improvise.",
-          weights: {
-            structure_preference: 1,
-            novelty_preference: 1
-          }
-        },
-        {
-          id: "travel_style_c",
-          text: "No plan; follow curiosity and conversations.",
-          weights: {
-            structure_preference: 2,
-            novelty_preference: 2,
-            risk_appetite: 1
-          }
-        },
-        {
-          id: "travel_style_d",
-          text: "One main goal; the rest can be flexible.",
-          weights: {
-            time_horizon: 1,
-            structure_preference: -1,
-            autonomy_need: 1
-          }
-        }
-      ]
-    },
-    {
-      id: "attention_detail",
-      text: "How do you feel about small details?",
-      options: [
-        {
-          id: "attention_detail_a",
-          text: "I naturally notice them and care.",
-          weights: {
-            structure_preference: -1,
-            cognitive_style: -1,
-            time_horizon: 1
-          }
-        },
-        {
-          id: "attention_detail_b",
-          text: "I can focus on them when needed, but prefer the big picture.",
-          weights: {
-            autonomy_need: 1
-          }
-        },
-        {
-          id: "attention_detail_c",
-          text: "I usually ignore them unless they cause problems.",
-          weights: {
-            structure_preference: 1,
-            time_horizon: -1,
-            novelty_preference: 1
-          }
-        },
-        {
-          id: "attention_detail_d",
-          text: "I obsess over them in certain areas and ignore them in others.",
-          weights: {
-            cognitive_style: 1,
-            autonomy_need: 1,
-            aesthetic_sensitivity: 1
-          }
-        }
-      ]
-    },
-    {
-      id: "conflict_style",
-      text: "When a team disagrees, you are most likely to...",
-      options: [
-        {
-          id: "conflict_style_a",
-          text: "Gather facts and propose a clear decision.",
-          weights: {
-            cognitive_style: -1,
-            structure_preference: -1,
-            social_energy: 1
-          }
-        },
-        {
-          id: "conflict_style_b",
-          text: "Help people understand each other's viewpoints.",
-          weights: {
-            social_energy: 2,
-            impact_orientation: -1,
-            cognitive_style: 1
-          }
-        },
-        {
-          id: "conflict_style_c",
-          text: "Suggest a creative compromise or third option.",
-          weights: {
-            cognitive_style: 2,
-            aesthetic_sensitivity: 1,
-            autonomy_need: 1
-          }
-        },
-        {
-          id: "conflict_style_d",
-          text: "Step away; conflict drains you.",
-          weights: {
-            social_energy: -2,
-            autonomy_need: 1
-          }
-        }
-      ]
-    },
-    {
-      id: "side_project",
-      text: "A friend asks for help on a side project. What is most appealing?",
-      options: [
-        {
-          id: "side_project_a",
-          text: "Define the scope and set milestones.",
-          weights: {
-            structure_preference: -2,
-            time_horizon: 2
-          }
-        },
-        {
-          id: "side_project_b",
-          text: "Prototype something quickly and test it.",
-          weights: {
-            hands_on: -1,
-            novelty_preference: 1,
-            risk_appetite: 1
-          }
-        },
-        {
-          id: "side_project_c",
-          text: "Brainstorm ideas and patterns together.",
-          weights: {
-            cognitive_style: 1,
-            autonomy_need: 1,
-            novelty_preference: 1
-          }
-        },
-        {
-          id: "side_project_d",
-          text: "Handle outreach and coordination.",
-          weights: {
-            social_energy: 2,
-            impact_orientation: -1,
-            autonomy_need: -1
           }
         }
       ]
@@ -1268,6 +891,426 @@ const AppData = {
       environment: "matching strengths to community needs",
       cluster: "community",
       tweaks: { impact_orientation: -8, structure_preference: -2 }
+    },
+    {
+      name: "Motion Designer",
+      focus: "bringing stories to life through movement",
+      environment: "balancing timing, rhythm, and visual polish",
+      cluster: "creative",
+      tweaks: { aesthetic_sensitivity: 10, novelty_preference: 6 }
+    },
+    {
+      name: "Art Director",
+      focus: "guiding the visual direction of campaigns",
+      environment: "aligning teams around a cohesive style",
+      cluster: "creative",
+      tweaks: { social_energy: 4, aesthetic_sensitivity: 10 }
+    },
+    {
+      name: "Experience Designer",
+      focus: "crafting end-to-end experiences across touchpoints",
+      environment: "mapping journeys and refining details",
+      cluster: "creative",
+      tweaks: { time_horizon: 6, aesthetic_sensitivity: 6 }
+    },
+    {
+      name: "Exhibit Designer",
+      focus: "designing immersive spaces for learning and culture",
+      environment: "mixing narrative flow with physical constraints",
+      cluster: "creative",
+      tweaks: { hands_on: -4, aesthetic_sensitivity: 8 }
+    },
+    {
+      name: "Story Editor",
+      focus: "shaping narratives into clear arcs",
+      environment: "giving feedback and refining drafts",
+      cluster: "creative",
+      tweaks: { cognitive_style: 8, structure_preference: -4 }
+    },
+    {
+      name: "Creative Producer",
+      focus: "turning creative concepts into shipped projects",
+      environment: "coordinating schedules, budgets, and collaborators",
+      cluster: "creative",
+      tweaks: { structure_preference: -4, impact_orientation: 6 }
+    },
+    {
+      name: "Visual Journalist",
+      focus: "telling real stories through visuals and data",
+      environment: "balancing accuracy with compelling imagery",
+      cluster: "creative",
+      tweaks: { cognitive_style: 6, impact_orientation: -4 }
+    },
+    {
+      name: "Multimedia Artist",
+      focus: "mixing formats to create expressive work",
+      environment: "experimenting across sound, video, and physical media",
+      cluster: "creative",
+      tweaks: { novelty_preference: 8, autonomy_need: 6 }
+    },
+    {
+      name: "Financial Analyst",
+      focus: "assessing financial health and performance trends",
+      environment: "building models and scenario plans",
+      cluster: "analytical",
+      tweaks: { time_horizon: 8, structure_preference: -6 }
+    },
+    {
+      name: "Risk Analyst",
+      focus: "identifying exposure and planning mitigations",
+      environment: "reviewing data and stress scenarios",
+      cluster: "analytical",
+      tweaks: { risk_appetite: -8, time_horizon: 6 }
+    },
+    {
+      name: "Business Intelligence Analyst",
+      focus: "turning operational data into dashboards",
+      environment: "defining metrics and reporting cadence",
+      cluster: "analytical",
+      tweaks: { structure_preference: -6, impact_orientation: 6 }
+    },
+    {
+      name: "Quantitative Researcher",
+      focus: "testing hypotheses with statistical models",
+      environment: "validating findings with rigorous analysis",
+      cluster: "analytical",
+      tweaks: { cognitive_style: -10, novelty_preference: 4 }
+    },
+    {
+      name: "Compliance Analyst",
+      focus: "ensuring processes meet regulatory standards",
+      environment: "documenting controls and audit trails",
+      cluster: "analytical",
+      tweaks: { structure_preference: -10, risk_appetite: -6 }
+    },
+    {
+      name: "Program Evaluator",
+      focus: "measuring the effectiveness of initiatives",
+      environment: "combining surveys, data, and outcome analysis",
+      cluster: "analytical",
+      tweaks: { impact_orientation: -4, time_horizon: 8 }
+    },
+    {
+      name: "Forecasting Analyst",
+      focus: "predicting demand and resource needs",
+      environment: "balancing history with scenario planning",
+      cluster: "analytical",
+      tweaks: { time_horizon: 10, cognitive_style: -4 }
+    },
+    {
+      name: "Decision Scientist",
+      focus: "optimizing trade-offs with analytical models",
+      environment: "running simulations and recommendations",
+      cluster: "analytical",
+      tweaks: { cognitive_style: -8, impact_orientation: 6 }
+    },
+    {
+      name: "Mental Health Counselor",
+      focus: "supporting people through emotional challenges",
+      environment: "building trust in structured sessions",
+      cluster: "helping",
+      tweaks: { social_energy: 6, impact_orientation: -10 }
+    },
+    {
+      name: "Academic Advisor",
+      focus: "helping students plan paths and decisions",
+      environment: "balancing requirements with personal goals",
+      cluster: "helping",
+      tweaks: { structure_preference: -4, impact_orientation: -8 }
+    },
+    {
+      name: "Patient Advocate",
+      focus: "navigating care systems for patients",
+      environment: "coordinating information and support",
+      cluster: "helping",
+      tweaks: { social_energy: 6, impact_orientation: -10 }
+    },
+    {
+      name: "Rehabilitation Specialist",
+      focus: "guiding recovery through practical routines",
+      environment: "tracking progress and adapting exercises",
+      cluster: "helping",
+      tweaks: { hands_on: -6, structure_preference: -4 }
+    },
+    {
+      name: "Youth Program Mentor",
+      focus: "supporting young people through growth moments",
+      environment: "mixing encouragement with practical guidance",
+      cluster: "helping",
+      tweaks: { social_energy: 8, impact_orientation: -8 }
+    },
+    {
+      name: "Case Manager",
+      focus: "connecting people to services and resources",
+      environment: "tracking needs across multiple systems",
+      cluster: "helping",
+      tweaks: { structure_preference: -6, impact_orientation: -8 }
+    },
+    {
+      name: "Wellness Coach",
+      focus: "building habits for healthier routines",
+      environment: "setting goals and accountability",
+      cluster: "helping",
+      tweaks: { autonomy_need: 4, impact_orientation: -6 }
+    },
+    {
+      name: "Learning and Development Specialist",
+      focus: "designing training that helps teams grow",
+      environment: "turning feedback into practical learning paths",
+      cluster: "helping",
+      tweaks: { structure_preference: -4, social_energy: 4 }
+    },
+    {
+      name: "HVAC Technician",
+      focus: "installing and maintaining climate systems",
+      environment: "troubleshooting on-site with tools",
+      cluster: "builder",
+      tweaks: { hands_on: -10, risk_appetite: -2 }
+    },
+    {
+      name: "Facilities Manager",
+      focus: "keeping buildings running smoothly",
+      environment: "coordinating repairs, vendors, and schedules",
+      cluster: "builder",
+      tweaks: { structure_preference: -6, impact_orientation: 6 }
+    },
+    {
+      name: "Fabrication Technician",
+      focus: "assembling components from precise plans",
+      environment: "working with tools and measurements",
+      cluster: "builder",
+      tweaks: { hands_on: -8, structure_preference: -4 }
+    },
+    {
+      name: "Production Supervisor",
+      focus: "keeping manufacturing lines on track",
+      environment: "balancing people, timing, and output",
+      cluster: "builder",
+      tweaks: { impact_orientation: 8, social_energy: 4 }
+    },
+    {
+      name: "Construction Estimator",
+      focus: "translating plans into materials and costs",
+      environment: "comparing bids and project constraints",
+      cluster: "builder",
+      tweaks: { cognitive_style: -4, time_horizon: 6 }
+    },
+    {
+      name: "Renewable Energy Technician",
+      focus: "installing and servicing energy systems",
+      environment: "working outdoors and on equipment",
+      cluster: "builder",
+      tweaks: { hands_on: -8, novelty_preference: 4 }
+    },
+    {
+      name: "Field Service Technician",
+      focus: "diagnosing issues on client sites",
+      environment: "adapting to varied equipment and timelines",
+      cluster: "builder",
+      tweaks: { autonomy_need: 6, hands_on: -6 }
+    },
+    {
+      name: "Prototype Builder",
+      focus: "building physical prototypes quickly",
+      environment: "iterating materials and mechanisms",
+      cluster: "builder",
+      tweaks: { novelty_preference: 6, hands_on: -6 }
+    },
+    {
+      name: "Machine Learning Engineer",
+      focus: "building models that learn from data",
+      environment: "iterating on experiments and pipelines",
+      cluster: "technical",
+      tweaks: { cognitive_style: -6, novelty_preference: 4 }
+    },
+    {
+      name: "Site Reliability Engineer",
+      focus: "keeping systems stable under real-world load",
+      environment: "automating alerts and recovery playbooks",
+      cluster: "technical",
+      tweaks: { structure_preference: -4, impact_orientation: 8 }
+    },
+    {
+      name: "Database Administrator",
+      focus: "keeping data reliable and accessible",
+      environment: "tuning performance and backups",
+      cluster: "technical",
+      tweaks: { structure_preference: -6, time_horizon: 6 }
+    },
+    {
+      name: "Cloud Architect",
+      focus: "designing scalable infrastructure patterns",
+      environment: "balancing cost, reliability, and growth",
+      cluster: "technical",
+      tweaks: { time_horizon: 8, impact_orientation: 8 }
+    },
+    {
+      name: "Embedded Systems Engineer",
+      focus: "building software that lives inside hardware",
+      environment: "working close to sensors and devices",
+      cluster: "technical",
+      tweaks: { hands_on: -4, cognitive_style: -6 }
+    },
+    {
+      name: "Integration Engineer",
+      focus: "connecting systems so data flows cleanly",
+      environment: "mapping APIs and edge cases",
+      cluster: "technical",
+      tweaks: { structure_preference: -4, impact_orientation: 6 }
+    },
+    {
+      name: "Observability Engineer",
+      focus: "making systems visible through metrics and traces",
+      environment: "designing telemetry and dashboards",
+      cluster: "technical",
+      tweaks: { cognitive_style: -4, time_horizon: 6 }
+    },
+    {
+      name: "Performance Engineer",
+      focus: "finding bottlenecks and speeding up systems",
+      environment: "profiling, tuning, and load testing",
+      cluster: "technical",
+      tweaks: { risk_appetite: -2, impact_orientation: 8 }
+    },
+    {
+      name: "Startup COO",
+      focus: "turning ambitious ideas into operating rhythm",
+      environment: "balancing speed with execution discipline",
+      cluster: "entrepreneurial",
+      tweaks: { risk_appetite: 6, impact_orientation: 6 }
+    },
+    {
+      name: "Venture Builder",
+      focus: "spinning up new ventures from scratch",
+      environment: "testing ideas quickly and killing weak ones",
+      cluster: "entrepreneurial",
+      tweaks: { novelty_preference: 8, risk_appetite: 8 }
+    },
+    {
+      name: "E-commerce Operator",
+      focus: "running digital storefronts and growth loops",
+      environment: "balancing conversion metrics and customer needs",
+      cluster: "entrepreneurial",
+      tweaks: { impact_orientation: 6, autonomy_need: 6 }
+    },
+    {
+      name: "Partnership Manager",
+      focus: "building deals that unlock new channels",
+      environment: "negotiating terms and long-term relationships",
+      cluster: "entrepreneurial",
+      tweaks: { social_energy: 6, time_horizon: 6 }
+    },
+    {
+      name: "Innovation Lead",
+      focus: "scouting opportunities and piloting new bets",
+      environment: "aligning stakeholders around experiments",
+      cluster: "entrepreneurial",
+      tweaks: { novelty_preference: 8, autonomy_need: 6 }
+    },
+    {
+      name: "Product Marketing Lead",
+      focus: "positioning products in crowded markets",
+      environment: "connecting insight, narrative, and launch plans",
+      cluster: "entrepreneurial",
+      tweaks: { social_energy: 4, cognitive_style: 4 }
+    },
+    {
+      name: "Revenue Operations Lead",
+      focus: "designing systems that scale revenue teams",
+      environment: "aligning process, data, and incentives",
+      cluster: "entrepreneurial",
+      tweaks: { structure_preference: -4, impact_orientation: 8 }
+    },
+    {
+      name: "Trail Builder",
+      focus: "maintaining and shaping outdoor trails",
+      environment: "working with terrain, tools, and weather",
+      cluster: "outdoors",
+      tweaks: { hands_on: -8, novelty_preference: 4 }
+    },
+    {
+      name: "Forestry Technician",
+      focus: "managing forests for health and safety",
+      environment: "collecting field data and maintaining equipment",
+      cluster: "outdoors",
+      tweaks: { hands_on: -6, time_horizon: 6 }
+    },
+    {
+      name: "Outdoor Education Instructor",
+      focus: "teaching outdoor skills and safety",
+      environment: "guiding groups through hands-on learning",
+      cluster: "outdoors",
+      tweaks: { social_energy: 6, impact_orientation: -4 }
+    },
+    {
+      name: "Conservation Officer",
+      focus: "protecting ecosystems and wildlife habitats",
+      environment: "balancing enforcement with public outreach",
+      cluster: "outdoors",
+      tweaks: { impact_orientation: -4, risk_appetite: 4 }
+    },
+    {
+      name: "Marine Field Researcher",
+      focus: "collecting data in aquatic environments",
+      environment: "working on boats and in shifting conditions",
+      cluster: "outdoors",
+      tweaks: { novelty_preference: 6, hands_on: -4 }
+    },
+    {
+      name: "Land Stewardship Manager",
+      focus: "planning land use and restoration efforts",
+      environment: "coordinating crews and seasonal priorities",
+      cluster: "outdoors",
+      tweaks: { time_horizon: 6, impact_orientation: 4 }
+    },
+    {
+      name: "Eco-Tour Guide",
+      focus: "leading visitors through natural landscapes",
+      environment: "storytelling while managing safety",
+      cluster: "outdoors",
+      tweaks: { social_energy: 6, autonomy_need: 4 }
+    },
+    {
+      name: "Civic Engagement Coordinator",
+      focus: "increasing participation in local decisions",
+      environment: "organizing campaigns and community outreach",
+      cluster: "community",
+      tweaks: { social_energy: 6, impact_orientation: -8 }
+    },
+    {
+      name: "Arts Program Manager",
+      focus: "supporting creative programs for the public",
+      environment: "aligning artists, venues, and schedules",
+      cluster: "community",
+      tweaks: { aesthetic_sensitivity: 6, social_energy: 4 }
+    },
+    {
+      name: "Community Outreach Specialist",
+      focus: "connecting services to underserved groups",
+      environment: "building partnerships and trust",
+      cluster: "community",
+      tweaks: { social_energy: 6, impact_orientation: -8 }
+    },
+    {
+      name: "Youth Services Coordinator",
+      focus: "running programs for young people",
+      environment: "coordinating mentors, space, and activities",
+      cluster: "community",
+      tweaks: { social_energy: 6, impact_orientation: -8 }
+    },
+    {
+      name: "Public Health Program Manager",
+      focus: "guiding community health initiatives",
+      environment: "balancing data, policy, and people needs",
+      cluster: "community",
+      tweaks: { impact_orientation: -6, structure_preference: -4 }
+    },
+    {
+      name: "Housing Services Coordinator",
+      focus: "helping residents access stable housing",
+      environment: "navigating agencies, landlords, and resources",
+      cluster: "community",
+      tweaks: { impact_orientation: -8, structure_preference: -4 }
     }
   ],
   hobbyEntries: [
@@ -1690,6 +1733,426 @@ const AppData = {
       environment: "coordinating timing, props, and people",
       cluster: "community",
       tweaks: { social_energy: 6, structure_preference: -2 }
+    },
+    {
+      name: "Collage Making",
+      focus: "assembling unexpected visuals from scraps",
+      environment: "mixing textures, paper, and found images",
+      cluster: "creative",
+      tweaks: { aesthetic_sensitivity: 8, novelty_preference: 6 }
+    },
+    {
+      name: "Street Sketching",
+      focus: "drawing quick scenes on the move",
+      environment: "capturing people, places, and light",
+      cluster: "creative",
+      tweaks: { aesthetic_sensitivity: 6, autonomy_need: 4 }
+    },
+    {
+      name: "Lyric Writing",
+      focus: "playing with words, rhythm, and voice",
+      environment: "collecting lines and polishing them over time",
+      cluster: "creative",
+      tweaks: { cognitive_style: 6, time_horizon: 4 }
+    },
+    {
+      name: "Watercolor Studies",
+      focus: "experimenting with color and flow",
+      environment: "layering washes and textures",
+      cluster: "creative",
+      tweaks: { aesthetic_sensitivity: 8, hands_on: -2 }
+    },
+    {
+      name: "Film Editing",
+      focus: "shaping footage into a story",
+      environment: "balancing pacing, sound, and tone",
+      cluster: "creative",
+      tweaks: { cognitive_style: 4, aesthetic_sensitivity: 6 }
+    },
+    {
+      name: "Storyboarding",
+      focus: "turning ideas into visual sequences",
+      environment: "sketching scenes and pacing",
+      cluster: "creative",
+      tweaks: { cognitive_style: 4, structure_preference: -2 }
+    },
+    {
+      name: "Handmade Bookbinding",
+      focus: "building notebooks and journals by hand",
+      environment: "measuring, folding, and stitching carefully",
+      cluster: "creative",
+      tweaks: { hands_on: -4, aesthetic_sensitivity: 6 }
+    },
+    {
+      name: "Costume Design",
+      focus: "creating wearable characters and moods",
+      environment: "mixing fabric, texture, and detail",
+      cluster: "creative",
+      tweaks: { aesthetic_sensitivity: 8, novelty_preference: 4 }
+    },
+    {
+      name: "Cryptography Challenges",
+      focus: "solving ciphers and encoded puzzles",
+      environment: "working through patterns and hints",
+      cluster: "analytical",
+      tweaks: { cognitive_style: -6, structure_preference: -4 }
+    },
+    {
+      name: "Statistical Sports Analysis",
+      focus: "finding trends in team and player data",
+      environment: "building simple models and predictions",
+      cluster: "analytical",
+      tweaks: { time_horizon: 4, cognitive_style: -4 }
+    },
+    {
+      name: "Citizen Science Data Projects",
+      focus: "collecting or cleaning data for research",
+      environment: "contributing to shared datasets",
+      cluster: "analytical",
+      tweaks: { impact_orientation: 4, structure_preference: -2 }
+    },
+    {
+      name: "Personal Knowledge Graph Building",
+      focus: "organizing ideas into linked systems",
+      environment: "tagging, connecting, and refining notes",
+      cluster: "analytical",
+      tweaks: { structure_preference: -6, cognitive_style: -4 }
+    },
+    {
+      name: "Forecasting Experiments",
+      focus: "making predictions and tracking accuracy",
+      environment: "running small experiments over time",
+      cluster: "analytical",
+      tweaks: { time_horizon: 6, risk_appetite: -2 }
+    },
+    {
+      name: "Mapmaking and Cartography",
+      focus: "turning locations into structured maps",
+      environment: "layering data with visual structure",
+      cluster: "analytical",
+      tweaks: { aesthetic_sensitivity: 4, cognitive_style: -4 }
+    },
+    {
+      name: "Historical Data Digging",
+      focus: "comparing trends across time periods",
+      environment: "building timelines and summaries",
+      cluster: "analytical",
+      tweaks: { time_horizon: 6, cognitive_style: -4 }
+    },
+    {
+      name: "Logic Puzzle Hunts",
+      focus: "joining teams to crack multi-step puzzles",
+      environment: "iterating hypotheses under time pressure",
+      cluster: "analytical",
+      tweaks: { social_energy: 2, cognitive_style: -4 }
+    },
+    {
+      name: "Food Pantry Volunteering",
+      focus: "packing and distributing essentials",
+      environment: "working with teams and regular shifts",
+      cluster: "helping",
+      tweaks: { social_energy: 4, impact_orientation: -6 }
+    },
+    {
+      name: "Crisis Line Training",
+      focus: "learning to support people in tough moments",
+      environment: "practicing empathy and active listening",
+      cluster: "helping",
+      tweaks: { social_energy: 6, impact_orientation: -8 }
+    },
+    {
+      name: "Literacy Coaching",
+      focus: "helping others build reading skills",
+      environment: "meeting regularly and tracking progress",
+      cluster: "helping",
+      tweaks: { structure_preference: -4, impact_orientation: -6 }
+    },
+    {
+      name: "Senior Companion Visits",
+      focus: "spending time with older adults",
+      environment: "building trust through conversation",
+      cluster: "helping",
+      tweaks: { social_energy: 6, impact_orientation: -8 }
+    },
+    {
+      name: "Refugee Support Team",
+      focus: "helping new arrivals navigate basics",
+      environment: "coordinating resources and check-ins",
+      cluster: "helping",
+      tweaks: { social_energy: 6, impact_orientation: -8 }
+    },
+    {
+      name: "Community Mediation",
+      focus: "helping people find common ground",
+      environment: "facilitating calm, structured conversation",
+      cluster: "helping",
+      tweaks: { structure_preference: -4, impact_orientation: -6 }
+    },
+    {
+      name: "Volunteer Event Planning",
+      focus: "organizing people around a shared cause",
+      environment: "building schedules and communication plans",
+      cluster: "helping",
+      tweaks: { social_energy: 4, structure_preference: -4 }
+    },
+    {
+      name: "Mutual Aid Coordination",
+      focus: "connecting neighbors with needs and offers",
+      environment: "tracking requests and follow-through",
+      cluster: "helping",
+      tweaks: { structure_preference: -4, impact_orientation: -6 }
+    },
+    {
+      name: "Metalworking Projects",
+      focus: "shaping metal into functional pieces",
+      environment: "working with heat, tools, and precision",
+      cluster: "builder",
+      tweaks: { hands_on: -8, risk_appetite: 2 }
+    },
+    {
+      name: "Tool Restoration",
+      focus: "bringing old tools back to life",
+      environment: "cleaning, tuning, and testing",
+      cluster: "builder",
+      tweaks: { hands_on: -6, structure_preference: -4 }
+    },
+    {
+      name: "Stone Masonry Practice",
+      focus: "stacking and shaping stone by hand",
+      environment: "learning balance, fit, and patience",
+      cluster: "builder",
+      tweaks: { hands_on: -8, time_horizon: 4 }
+    },
+    {
+      name: "Leathercraft",
+      focus: "cutting and stitching durable goods",
+      environment: "working with patterns and hand tools",
+      cluster: "builder",
+      tweaks: { hands_on: -6, aesthetic_sensitivity: 4 }
+    },
+    {
+      name: "Garden Irrigation DIY",
+      focus: "building small watering systems",
+      environment: "testing flow and fixing leaks",
+      cluster: "builder",
+      tweaks: { hands_on: -6, structure_preference: -2 }
+    },
+    {
+      name: "Concrete Casting",
+      focus: "pouring molds for small structures",
+      environment: "mixing materials and refining forms",
+      cluster: "builder",
+      tweaks: { hands_on: -8, novelty_preference: 2 }
+    },
+    {
+      name: "Skateboard Building",
+      focus: "pressing decks and tuning components",
+      environment: "experimenting with shape and ride feel",
+      cluster: "builder",
+      tweaks: { hands_on: -6, novelty_preference: 4 }
+    },
+    {
+      name: "Workshop Layout Planning",
+      focus: "designing efficient tool setups",
+      environment: "building storage and workflow zones",
+      cluster: "builder",
+      tweaks: { structure_preference: -6, impact_orientation: 4 }
+    },
+    {
+      name: "Open-source Contributions",
+      focus: "fixing issues and shipping patches",
+      environment: "collaborating through pull requests",
+      cluster: "technical",
+      tweaks: { impact_orientation: 6, social_energy: 2 }
+    },
+    {
+      name: "Homelab Networking",
+      focus: "building a small server and network setup",
+      environment: "tuning routers, switches, and services",
+      cluster: "technical",
+      tweaks: { structure_preference: -4, impact_orientation: 6 }
+    },
+    {
+      name: "Retro Console Repair",
+      focus: "restoring older electronics and games",
+      environment: "soldering, testing, and troubleshooting",
+      cluster: "technical",
+      tweaks: { hands_on: -4, cognitive_style: -4 }
+    },
+    {
+      name: "Robotics Kits",
+      focus: "assembling programmable robots",
+      environment: "mixing code with sensors and movement",
+      cluster: "technical",
+      tweaks: { hands_on: -2, novelty_preference: 4 }
+    },
+    {
+      name: "Command-line Tool Building",
+      focus: "creating utilities to automate tasks",
+      environment: "refining small scripts and workflows",
+      cluster: "technical",
+      tweaks: { cognitive_style: -4, autonomy_need: 4 }
+    },
+    {
+      name: "API Experimentation",
+      focus: "connecting services for small automations",
+      environment: "testing endpoints and data flow",
+      cluster: "technical",
+      tweaks: { impact_orientation: 4, structure_preference: -2 }
+    },
+    {
+      name: "Performance Benchmarking",
+      focus: "measuring speed and resource use",
+      environment: "running tests and tuning setups",
+      cluster: "technical",
+      tweaks: { cognitive_style: -4, time_horizon: 4 }
+    },
+    {
+      name: "Firmware Tuning",
+      focus: "customizing device firmware settings",
+      environment: "testing builds and flashing updates",
+      cluster: "technical",
+      tweaks: { risk_appetite: 2, hands_on: -2 }
+    },
+    {
+      name: "Newsletter Publishing",
+      focus: "curating ideas and building a small audience",
+      environment: "testing topics and feedback loops",
+      cluster: "entrepreneurial",
+      tweaks: { social_energy: 4, autonomy_need: 6 }
+    },
+    {
+      name: "Crowdfunding Campaign Design",
+      focus: "packaging ideas into compelling pitches",
+      environment: "planning rewards, timelines, and storytelling",
+      cluster: "entrepreneurial",
+      tweaks: { novelty_preference: 6, risk_appetite: 6 }
+    },
+    {
+      name: "Micro-Product Experiments",
+      focus: "launching tiny products to test demand",
+      environment: "iterating on feedback and pricing",
+      cluster: "entrepreneurial",
+      tweaks: { novelty_preference: 8, autonomy_need: 6 }
+    },
+    {
+      name: "Local Service Hustle",
+      focus: "running a small service for neighbors",
+      environment: "scheduling, pricing, and repeat customers",
+      cluster: "entrepreneurial",
+      tweaks: { social_energy: 4, impact_orientation: -2 }
+    },
+    {
+      name: "Sponsor Outreach",
+      focus: "pitching partnerships for small projects",
+      environment: "writing pitches and negotiating terms",
+      cluster: "entrepreneurial",
+      tweaks: { social_energy: 6, risk_appetite: 4 }
+    },
+    {
+      name: "Subscription Box Curation",
+      focus: "curating themed items into small bundles",
+      environment: "sourcing, packaging, and testing demand",
+      cluster: "entrepreneurial",
+      tweaks: { novelty_preference: 6, structure_preference: -2 }
+    },
+    {
+      name: "Pitch Deck Practice",
+      focus: "crafting narratives for business ideas",
+      environment: "refining messaging and visual flow",
+      cluster: "entrepreneurial",
+      tweaks: { cognitive_style: 4, autonomy_need: 4 }
+    },
+    {
+      name: "Trail Running",
+      focus: "pushing pace on uneven terrain",
+      environment: "exploring routes and tracking progress",
+      cluster: "outdoors",
+      tweaks: { risk_appetite: 4, novelty_preference: 4 }
+    },
+    {
+      name: "Mountain Biking",
+      focus: "riding challenging trails",
+      environment: "tuning gear and handling terrain",
+      cluster: "outdoors",
+      tweaks: { hands_on: -2, risk_appetite: 4 }
+    },
+    {
+      name: "Foraging Walks",
+      focus: "identifying edible plants and fungi",
+      environment: "learning local ecology hands-on",
+      cluster: "outdoors",
+      tweaks: { cognitive_style: 4, hands_on: -2 }
+    },
+    {
+      name: "Wilderness Survival Practice",
+      focus: "learning shelter, fire, and navigation skills",
+      environment: "testing skills in real conditions",
+      cluster: "outdoors",
+      tweaks: { risk_appetite: 6, autonomy_need: 4 }
+    },
+    {
+      name: "Surfing Sessions",
+      focus: "reading waves and timing movement",
+      environment: "spending time in changing conditions",
+      cluster: "outdoors",
+      tweaks: { risk_appetite: 4, novelty_preference: 4 }
+    },
+    {
+      name: "Stargazing Camping",
+      focus: "spending nights under dark skies",
+      environment: "tracking constellations and quiet time",
+      cluster: "outdoors",
+      tweaks: { time_horizon: 4, autonomy_need: 4 }
+    },
+    {
+      name: "River Cleanup Kayaking",
+      focus: "paddling waterways while collecting trash",
+      environment: "mixing adventure with stewardship",
+      cluster: "outdoors",
+      tweaks: { impact_orientation: -4, hands_on: -2 }
+    },
+    {
+      name: "Community Radio Volunteering",
+      focus: "producing segments for local radio",
+      environment: "working with a small team on schedules",
+      cluster: "community",
+      tweaks: { social_energy: 4, aesthetic_sensitivity: 4 }
+    },
+    {
+      name: "Block Party Planning",
+      focus: "organizing neighborhood gatherings",
+      environment: "coordinating food, music, and people",
+      cluster: "community",
+      tweaks: { social_energy: 6, structure_preference: -2 }
+    },
+    {
+      name: "Local History Tours",
+      focus: "researching and sharing neighborhood stories",
+      environment: "leading small groups through routes",
+      cluster: "community",
+      tweaks: { social_energy: 4, time_horizon: 4 }
+    },
+    {
+      name: "Skill-share Workshops",
+      focus: "teaching practical skills to neighbors",
+      environment: "setting agendas and hands-on demos",
+      cluster: "community",
+      tweaks: { social_energy: 4, impact_orientation: -4 }
+    },
+    {
+      name: "Town Hall Facilitation",
+      focus: "helping groups discuss local issues",
+      environment: "guiding discussion with clear structure",
+      cluster: "community",
+      tweaks: { structure_preference: -4, social_energy: 4 }
+    },
+    {
+      name: "Community Bulletin Editing",
+      focus: "curating news for local boards",
+      environment: "collecting updates and keeping things organized",
+      cluster: "community",
+      tweaks: { structure_preference: -4, impact_orientation: -4 }
     }
   ]
 };

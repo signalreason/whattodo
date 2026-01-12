@@ -291,10 +291,10 @@ function renderLanding() {
   view.innerHTML = `
     <section class="panel fade-up">
       <div class="tag">Sideways Compass</div>
-      <h1>Answer a few odd questions. Get surprisingly accurate ideas for work and play.</h1>
+      <h1>Answer seven odd questions. Get surprisingly accurate ideas for work and play.</h1>
       <p class="lead">No resumes. No labels. Just a playful set of prompts that adds up to useful direction.</p>
       <button class="primary" id="start-quiz">Start the questions</button>
-      <div class="note">Takes about 3-4 minutes. No signup required.</div>
+      <div class="note">Takes about 2 minutes. No signup required.</div>
     </section>
   `;
 
