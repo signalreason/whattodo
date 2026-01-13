@@ -13,6 +13,11 @@ Lightweight, client-side questionnaire that maps playful questions to trait dime
 ## Highest-Impact Next Step
 - Add shareable results via URL parameters so users can revisit and share outcomes.
 
+## Checks
+- Status: failing (GitHub Actions: Deploy GitHub Pages).
+- Issue: https://github.com/signalreason/whattodo/issues/3
+- TODO: Investigate Pages deployment queue timeouts.
+
 ## Run locally
 
 Option 1 (quick):
