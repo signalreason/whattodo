@@ -10,6 +10,9 @@ Lightweight, client-side questionnaire that maps playful questions to trait dime
 - Provide clear, playful explanations for each match.
 - Maintain curated trait data and scoring logic in plain JS.
 
+## Highest-Impact Next Step
+- Add shareable results via URL parameters so users can revisit and share outcomes.
+
 ## Run locally
 
 Option 1 (quick):
