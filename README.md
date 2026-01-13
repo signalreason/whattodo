@@ -2,6 +2,14 @@
 
 Lightweight, client-side questionnaire that maps playful questions to trait dimensions and returns three occupations and three hobbies with explanations.
 
+## Purpose
+- Offer a lightweight, client-side questionnaire that connects traits to occupations and hobbies.
+
+## Goals
+- Keep the experience no-build and easy to run locally.
+- Provide clear, playful explanations for each match.
+- Maintain curated trait data and scoring logic in plain JS.
+
 ## Run locally
 
 Option 1 (quick):
